@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>I'mCapGen</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<style>
+		body{ background-color: #FFF6F6; }
+		.app-body-container{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.im-cap-gen-nav{ background-color: #FFC197; }
+
+		.card{
+			width: 40vw;
+			margin: 2% 30%;
+			background-color: #FFFFFF;
+			transition: margin 1s;
+		}
+		.card:hover{
+			box-shadow: 4px 14px 13px -3px rgba(0,0,0,0.1);
+		}
+		.card-header{ background-color: #FFE1E1; }
+
+		/*===============================================================================*/
+		svg{ margin: 2% 9%; }
+
+		@keyframes circle851-5-5 {
+			0% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+			10% { fill: #FDD1E9; transform: translate(-5px, -10px) scale(1.07); }
+			20% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+		}
+		#circle851, #circle851-5, #circle851-5-5, #circle851-9{
+			animation-name: circle851-5-5;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes circle851-5-0 {
+			10% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+			20% { fill: #FC9FEC; transform: translate(-8px, -10px) scale(1.07); }
+			30% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+		}
+		#circle851-5-0, #circle851-5-5-8, #circle851-9-0{
+			animation-name: circle851-5-0;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes circle851-5-5-7 {
+			20% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+			30% { fill: #FC76AF; transform: translate(-14px, -10px) scale(1.07); }
+			40% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+		}
+		#circle851-5-5-7, #circle851-9-9 {
+			animation-name: circle851-5-5-7;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes circle851-5-0-9 {
+			30% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+			40% { fill: #FEAABA; transform: translate(-20px, -10px) scale(1.07); }
+			50% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+		}
+		#circle851-5-0-9, #circle851-5-5-8-1, #circle851-9-0-8 {
+			animation-name: circle851-5-0-9;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes circle851-5-5-7-1 {
+			40% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+			50% { fill: #FFC1C1; transform: translate(-25px, -10px) scale(1.07); }
+			60% { fill: #ffffff; transform: translate(0px, 0px) scale(1.0); }
+		}
+		#circle851-5-5-7-1, #circle851-9-9-9 {
+			animation-name: circle851-5-5-7-1;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg im-cap-gen-nav sticky-sm-top">
+		<div class="container-fluid im-cap-gen-nav">
+			<a class="navbar-brand" href="#">I'mCapGenerator</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="app-body-container">
+		<!-- <div class="card" id="card"> -->
+		<form class="card" id="card" action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+			<div class="card-header">
+				Hey there! Wondering what's this place? Well this is a little take on elevating the power of Deep Learning, 
+				Computer Vision & Natural Language Processing & showcase that in this minimal utility format!
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">We Caption your image!!</h5>
+				<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+				
+				
+				<svg 
+					xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+					xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" 
+					xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="430" height="260" version="1.1" id="svg853" sodipodi:docname="neural_net_diagram.svg" 
+					inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+					<metadata id="metadata859">
+						<rdf:RDF>
+							<cc:Work rdf:about="">
+								<dc:format>image/svg+xml</dc:format>
+								<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+								<dc:title></dc:title>
+							</cc:Work>
+						</rdf:RDF>
+					</metadata>
+					<defs id="defs857" />
+					<sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1051" id="namedview855" showgrid="false" inkscape:zoom="1.7392636" inkscape:cx="108.95697" inkscape:cy="200.08403" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="svg853" />
+
+					<g id="g1764" transform="matrix(1.142726,0,0,1.0529046,-30.120255,-38.635004)">
+						<ellipse cx="47.029305" cy="130.50424" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5" rx="17.462452" ry="17.66573"/>
+						<ellipse cx="47.029305" cy="188.47147" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-5" rx="17.462452" ry="17.66573" />
+						<ellipse cx="47.06208" cy="68.222504" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851" rx="17.462452" ry="17.66573" />
+						<ellipse cx="46.622749" cy="249.0482" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-9" rx="17.462452" ry="17.66573" />
+
+						<ellipse cx="126.93066" cy="99.349487" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-0" rx="17.462452" ry="17.66573" />
+						<ellipse cx="126.93066" cy="157.31671" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-5-8" rx="17.462452" ry="17.66573" />
+						<ellipse cx="126.52411" cy="217.89343" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-9-0" rx="17.462452" ry="17.66573" />
+
+						<ellipse cx="202.26819" cy="130.26817" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-5-7" rx="17.462452" ry="17.66573" />
+						<ellipse cx="201.86163" cy="188.84491" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-9-9" rx="17.462452" ry="17.66573" />
+
+						<ellipse cx="275.97949" cy="98.700256" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-0-9" rx="17.462452" ry="17.66573" />
+						<ellipse cx="275.97949" cy="156.66748" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-5-8-1" rx="17.462452" ry="17.66573" />
+						<ellipse cx="275.57294" cy="217.2442" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-9-0-8" rx="17.462452" ry="17.66573" />
+
+						<ellipse cx="353.52692" cy="129.67474" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-5-5-7-1" rx="17.462452" ry="17.66573" />
+						<ellipse cx="353.12036" cy="188.25148" fill="#ffffff" stroke="#000000" stroke-width="0.669097" id="circle851-9-9-9" rx="17.462452" ry="17.66573" />
+
+						<g>
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 64.511182,71.960282 109.3339,97.471625" id="path1630" sodipodi:nodetypes="cc" />
+							<path style="fill:none;stroke:#000000;stroke-width:0.934923px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 144.18303,103.03396 40.61593,27.48105" id="path1630-5" sodipodi:nodetypes="cc" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:0.975131px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 219.48598,132.62329 38.90735,23.76473" id="path1630-5-5" />
+							<path style="fill:none;stroke:#000000;stroke-width:0.896145px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 293.46596,156.37568 41.97147,33.07231" id="path1630-5-5-0" sodipodi:nodetypes="cc" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 64.511182,71.960282 109.27175,156.61843" id="path1692" sodipodi:nodetypes="cc" />
+							<path style="fill:none;stroke:#000000;stroke-width:1.01255px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 64.515833,71.961565 108.90477,219.92066" id="path1694" sodipodi:nodetypes="cc" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1.04124px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 109.35134,98.107359 64.895191,127.22925 109.27175,156.61843" id="path1696" sodipodi:nodetypes="ccc" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 64.032758,126.72617 44.872012,93.19449" id="path1698" sodipodi:nodetypes="cc" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 109.35134,98.107359 64.847983,188.98267 109.27175,156.61843" id="path1700" sodipodi:nodetypes="ccc" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 64.847983,188.98267 44.056787,30.93799" id="path1702" sodipodi:nodetypes="cc" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 109.35134,98.107359 64.058207,245.79368 109.27175,156.61843" id="path1704" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 64.058207,245.79368 108.90477,219.92066" id="path1706" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 184.79896,130.51501 -40.82187,26.99823 40.24691,30.20988" id="path1708" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 184.79896,130.51501 -40.82187,87.3933 40.24691,-30.18519" id="path1710" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 144.18303,103.03396 184.224,187.72312" id="path1712" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 219.48598,132.62329 C 258.10585,99.467383 258.10585,99.467383 258.10585,99.467383" id="path1714" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 219.48598,132.62329 38.33239,82.9852" id="path1716" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 258.10585,99.467383 -38.80953,89.118177 39.09701,-32.19754" id="path1718" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 219.29632,188.58556 38.52205,27.02293" id="path1720" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 293.46564,156.37568 42.54674,-27.01059"   id="path1722" />
+
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 336.01238,129.36509 293.46564,97.742515 335.43743,189.44799" id="path1724" sodipodi:nodetypes="ccc" />
+							<path style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 336.01238,129.36509 -43.1217,87.39331 42.54675,-27.31041" id="path1726" />
+						</g>
+					</g>
+				</svg>
+
+				<div class="mb-3">
+					<label for="formFile" class="form-label"></label>
+					<input class="form-control" type="file" id="formFile" name="imagefile">
+				</div>
+				<button href="#" class="btn btn-outline-danger" type="submit" onclick="showOutput();">Caption this</button>
+				<!-- <a href="#" class="btn btn-outline-danger" type="submit" onclick="reset();">Reset</a> -->
+			</div>
+		</form>
+	</div>
+
+	<div>
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+			<!-- Grid container -->
+			<div class="container p-4">
+
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto"> 
+								<p class="pt-2"> Reach out to us at : <a href="mailto:bhattacharyadebarshi4@gmail.com">bhattacharyadebarshi4@gmail.com</a> </p> 
+							</div>
+						</div>
+					</form>
+				</section>
+				<!-- Section: Form -->
+
+				<!-- Section: Text -->
+				<section class="mb-4">
+					<p>
+						Contributors
+					</p>
+				</section>
+				<!-- Section: Text -->
+
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!--Grid column-->
+						<div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Megha Burnwal</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li> <a href="#!" class="text-white">Github</a> </li>
+								<li> <a href="#!" class="text-white">LinkedIn</a> </li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Dibyendu Lahiri</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li> <a href="#!" class="text-white">Github</a> </li>
+								<li> <a href="#!" class="text-white">LinkedIn</a> </li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Anamitro Das</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li> <a href="#!" class="text-white">Github</a> </li>
+								<li> <a href="#!" class="text-white">LinkedIn</a> </li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+							<h5 class="text-uppercase">Debarshi Bhattacharya</h5>
+
+							<ul class="list-unstyled mb-0">
+								<li> <a href="#!" class="text-white">Github</a> </li>
+								<li> <a href="#!" class="text-white">LinkedIn</a> </li>
+							</ul>
+						</div>
+						<!--Grid column-->
+					</div>
+				</section>
+			</div>
+		</footer>
+	</div>
+
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<script>
+			// https://stackoverflow.com/questions/10139460/modify-stroke-and-fill-of-svg-image-with-javascript
+			// document.getElementById('circle851-5').setAttribute("stroke",'#FF3535');
+
+			// function showOutput(){
+			// 	console.log("hi");
+
+			// 	document.getElementById("card").style.margin = '2% 1% 2% 5%';
+			// 	document.getElementById("output-container").style.visibility = 'hidden';
+
+			// 	// https://stackoverflow.com/questions/4738595/how-do-i-delay-a-function-call-for-5-seconds
+			// 	setTimeout(function() { 
+			// 		document.getElementById("output-container").style.margin = '2% 0% 0% 0%';
+			// 		document.getElementById("output-container").style.visibility = 'visible';
+			// 	}, 1000);
+			// }
+
+			// function reset(){
+			// 	document.getElementById("card").style.width = '40vw';
+			// 	document.getElementById("card").style.margin = '2% 30%';
+			// 	document.getElementById("output-container").style.visibility = 'hidden';
+			// 	setTimeout(function() {  document.getElementById("output-container").style.visibility = 'visible'; }, 1000);
+			// 	document.getElementById("output-container").style.margin = '2% 0% 0% -70%';
+			// }
+
+	</script>
+</body>
+</html>
